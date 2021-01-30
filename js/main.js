@@ -22,3 +22,17 @@ function writeThis(word, number) {
 console.log(writeThis("patata", 10));
 console.log(writeThis("Aguacate", 7));
 console.log(writeThis("Pizza", 50));
+
+//ex fase 4
+const randomNumber = getRandomNumber(10);
+function getRandomNumber(max) {
+  return Math.ceil(Math.random() * max);
+}
+console.log(randomNumber);
+
+function writeThis(word, randomNumber) {
+  return word.repeat(randomNumber);
+}
+console.log(writeThis("patata", randomNumber));
+console.log(writeThis("Aguacate", randomNumber));
+console.log(writeThis("Pizza", randomNumber));
